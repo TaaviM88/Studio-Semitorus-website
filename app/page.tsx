@@ -5,12 +5,19 @@ export default function Home() {
     <div className="min-h-screen bg-gray-900 text-white">
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center bg-gradient-to-b from-purple-900 to-gray-900">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-4">Studio Semitorus</h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300">Crafting Immersive Gaming Experiences</p>
-          <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
+        <div className="flex flex-col items-center">
+        <Image 
+            src="/company/studioSemitorus_logo.png" 
+            alt="Studio Semitorus Logo" 
+            width={200} 
+            height={200} 
+            className="mb-6"
+        />
+        <h1 className="text-5xl md:text-7xl font-bold mb-4">Studio Semitorus</h1>
+        <p className="text-xl md:text-2xl mb-8 text-gray-300">Crafting Immersive Gaming Experiences</p>
+        <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 px-8 rounded-full transition duration-300">
             Discover Our Games
-          </button>
+        </button>
         </div>
         <div className="absolute bottom-10 left-0 right-0 text-center">
           <div className="animate-bounce">
@@ -46,7 +53,7 @@ export default function Home() {
                 <p className="text-lg font-bold">Game Screenshot</p>
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Dragon's Realm</h3>
+                <h3 className="text-xl font-bold mb-2">Dragon&apos;s Realm</h3>
                 <p className="text-gray-300 mb-4">A fantasy RPG where heroes embark on quests, slay dragons, and discover ancient artifacts in a vast open world.</p>
                 <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300">
                   Learn More
@@ -54,18 +61,24 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Game 3 */}
+            {/* Game 3 - False Hope */}
             <div className="bg-gray-700 rounded-lg overflow-hidden shadow-lg transition transform hover:scale-105">
-              <div className="h-64 bg-gray-500 flex items-center justify-center">
-                <p className="text-lg font-bold">Game Screenshot</p>
-              </div>
-              <div className="p-6">
-                <h3 className="text-xl font-bold mb-2">Cyber Shadows</h3>
-                <p className="text-gray-300 mb-4">A cyberpunk action game set in a dystopian future where players hack, slash, and navigate a neon-lit metropolis.</p>
+            <div className="h-64 bg-gray-500 overflow-hidden">
+                <Image 
+                src="/games/False Hope/falseHope_main.png" 
+                alt="False Hope Game Screenshot" 
+                width={600} 
+                height={400}
+                className="w-full h-full object-cover"
+                />
+            </div>
+            <div className="p-6">
+                <h3 className="text-xl font-bold mb-2">False Hope</h3>
+                <p className="text-gray-300 mb-4">A spine-chilling horror experience that will test your courage and survival instincts in a world of psychological terror.</p>
                 <button className="bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded transition duration-300">
-                  Learn More
+                Learn More
                 </button>
-              </div>
+            </div>
             </div>
           </div>
         </div>
